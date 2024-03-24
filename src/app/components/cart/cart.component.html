@@ -1,0 +1,12 @@
+<p>cart list</p>
+@for (item of cartList; track $index) {
+    <div>
+        <p>item : {{item.name}}</p>
+        <p>qty : {{item.quantity}}</p>
+        <p>price :{{item.price * item.quantity}}</p>
+    </div>
+}
+
+<div>total bill amount : {{cartAmt}}</div>
+
+

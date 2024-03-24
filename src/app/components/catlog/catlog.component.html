@@ -1,0 +1,13 @@
+<p> food list</p>
+
+@for (food of foodlist; track $index) {
+    <div>
+        <p>{{food.name}}</p>
+        <p>{{food.quantity}}</p>
+        <!-- <button (click)="addFoodCount($index)">+</button>
+        <button (click)="removeFoodCount($index)">-</button> -->
+        <button (click)="addFoodCount($index,true)">-</button>
+    </div>
+}@empty {
+    <p>no food found</p>
+}
